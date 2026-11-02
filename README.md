@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "discord/8806482002 or https://job-boards.greenhouse.io/discord/jobs/8806482002.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -193,7 +193,7 @@ response = requests.get(
     params={
         "query": "discord. A job URL returns 400.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
